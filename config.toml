@@ -3,6 +3,7 @@ title = "Medgelabs"
 languageCode = "en"
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+uglyurls = true
 #disqusShortname = "XXX"
 
 [author]
