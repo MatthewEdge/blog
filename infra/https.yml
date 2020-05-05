@@ -55,15 +55,15 @@ Resources:
             Action:
               - s3:GetObject
             Resource: !Sub "arn:aws:s3:::${WebsiteBucket}/*"
-            Principal: "*"
-              # AWS:
-                # - !Sub "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity ${CloudFrontOriginAccessIdentity}"
+            Principal:
+              AWS:
+                - !Sub "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity ${CloudFrontOriginAccessIdentity}"
 
-  # CloudFrontOriginAccessIdentity:
-    # Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
-    # Properties:
-      # CloudFrontOriginAccessIdentityConfig:
-        # Comment: !Ref SiteUrl
+  CloudFrontOriginAccessIdentity:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: !Ref SiteUrl
 
   CloudFrontWebsite:
     Type: AWS::CloudFront::Distribution
@@ -74,15 +74,8 @@ Resources:
         Origins:
           - DomainName: !GetAtt WebsiteBucket.RegionalDomainName
             Id: !Ref WebsiteBucket
-            # This is required to support S3 redirection rules
-            CustomOriginConfig:
-              OriginProtocolPolicy: "http-only"
-              HTTPPort: 80
-              HTTPSPort: 443
-              OriginSSLProtocols:
-                - TLSv1.2
-            # S3OriginConfig:
-              # OriginAccessIdentity: !Sub origin-access-identity/cloudfront/${CloudFrontOriginAccessIdentity}
+            S3OriginConfig:
+              OriginAccessIdentity: !Sub origin-access-identity/cloudfront/${CloudFrontOriginAccessIdentity}
         Enabled: true
         HttpVersion: http2
         Comment: !Ref SiteUrl
