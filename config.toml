@@ -1,8 +1,8 @@
-baseURL = "https://medgelabs.io/"
+baseURL = "https://blog.medgelabs.io/"
 title = "Medgelabs"
 languageCode = "en"
 defaultContentLanguage = "en"
-# disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
 #disqusShortname = "XXX"
 
 [author]
