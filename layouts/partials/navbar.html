@@ -1,0 +1,21 @@
+<header>
+	<nav>
+		<ul class="main">
+			<li class="brand"><a href="https://blog.medgelabs.io">{{ .Site.Title }}</a></li>
+			{{ if .RSSLink }}
+			<li>
+				<a href="{{ .RSSLink }}" class="fa fa-rss" target="_blank"></a>
+			</li>
+			{{ end }}
+			<li>
+        <a class="fa fa-linkedin" href="https://www.linkedin.com/in/{{ .Site.Author.linkedin }}/" target="_blank"></a>
+			</li>
+			<li>
+        <a class="fa fa-github" href="https://github.com/{{ .Site.Author.github }}" target="_blank"></a>
+			</li>
+			<li>
+        <a class="fa fa-stack-overflow" href="https://stackoverflow.com/users/{{ .Site.Author.stackoverflow }}" target="_blank"></a>
+			</li>
+		</ul>
+	</nav>
+</header>
