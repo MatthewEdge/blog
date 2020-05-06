@@ -35,11 +35,6 @@ Resources:
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: index.html
-        RoutingRules:
-          - RedirectRule:
-              ReplaceKeyWith: index.html
-            RoutingRuleCondition:
-              KeyPrefixEquals: "/"
       Tags:
         - Key: app
           Value: !Ref SiteUrl
