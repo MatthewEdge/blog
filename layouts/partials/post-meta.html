@@ -4,9 +4,10 @@
   {{ if .Params.tags }}
   |
   {{ range .Params.tags }}
-  <a class="tag" href="/tags/{{ . | urlize }}/">{{ . }}</a>
+  <!-- <a class="tag" href="/tags/{{ . | urlize }}/">{{ . }}</a> -->
+  <a class="tag" href="#">{{ . }}</a>
   {{ end }}
   {{ else }}
-  <span>{{ i18n "postMetaNoTag" }}</span>
+  <span>No Tag</span>
   {{ end }}
 </span>

@@ -3,6 +3,7 @@ date = "2020-05-05"
 title = "Hosting Hugo on AWS"
 author = "{{ .Site.Author.name }}"
 description = "Hugo, CloudFront, and AWS S3"
+tags = ["aws", "cloudfront", "s3", "hugo"]
 +++
 
 After spending the majority of today trying to figure this out, I'd like to discuss how this
