@@ -1,14 +1,9 @@
-html {
-  min-height: 100%;
-  width: 100%;
-  height: 100%;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
+  line-height: 1.5;
   color: #333333;
   background-color: #ffffff;
   text-align: center;
@@ -16,21 +11,27 @@ body {
 
 .container {
   position: relative;
-  max-width: 50%;
+  max-width: 932px;
   overflow: hidden;
   margin: 0 auto;
   text-align: left;
   padding: 0px 20px 50px 20px;
 }
 
+.brand {
+  font-size: 2rem;
+  color: #8AA2D3;
+}
+
+
 a {
-  color: #3700ff;
+  color: #8AA2D3;
   text-decoration: none;
   word-break: break-word;
 }
 
 a:hover {
-  border-bottom: 2px solid #3700ff;
+  border-bottom: 2px solid #8AA2D3;
 }
 
 header ul {
@@ -65,25 +66,24 @@ article > h3 {
   font-size: 1.3rem;
 }
 
-.time {
+/* Post metadata */
+h3.post-title {
+  margin-bottom: 0.7rem;
+}
+
+.post-meta {
   font-size: 1rem;
   color: #666;
-  font-weight: 600;
+}
+
+.tag {
+  color: #8F82BC;
 }
 
 /* Code fragments */
 .highlight {
   border: 1px solid #ccc;
   padding: 15px;
-}
-
-ul.tags {
-  display: flex;
-}
-
-ul.tags li {
-  list-style-type: none;
-  margin-right: 1rem;
 }
 
 footer {

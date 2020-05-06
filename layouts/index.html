@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  {{ partial "header.html" }}
+  {{ partial "head.html" }}
 
   <body>
     <div class="container home">
       {{ partial "navbar.html" . }}
 
-      <h1>Blog</h1>
+      <!-- <h1 class="title">MedgeLabs</h1> -->
 
       <hr />
 
@@ -14,10 +14,10 @@
       {{ if ne .Title "Posts" }}
       {{ if ne .Title .Site.Title }}
       <article>
-        <h3>
+        <h3 class="post-title">
           <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
         </h3>
-        <div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div>
+        {{ partial "post-meta.html" . }}
         <p>{{ .Summary }}</p>
         {{ partial "tags.html" . }}
       </article>
