@@ -221,7 +221,7 @@ business logic. I'm not much a fan of this but your mileage may vary!
 Overall this isn't a terrible start, and is certainly convenient if you already had a spec you were
 expected to implement, but we still have the whole kitchen sink where we really just needed a bowl.
 
-## Just APIs / Models
+## Just Generate the APIs / Models
 
 Getting rid of the metaphorical sink in favor of just API and Model code requires a bit of configuration.
 Note that some of these configuration options are for the **spring** generator. Other generators may require
@@ -307,7 +307,7 @@ openApiGenerate {
 }
 ```
 
-## Only 1 File?
+## How to Support Multiple Files?
 
 This is all well and good but I imagine most of you will quickly ask "what if I have more than one file?".
 The documentation on how to do multiple generation steps is fairly quick to find scrolling through [the README](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-gradle-plugin#generate-multiple-sources).
@@ -369,7 +369,7 @@ altered slightly to make use of the loop variables to create the appropriate con
 
 Now, if we run **gradle genApis**, we should see our code within the **api** package!
 
-## Customizing the Generator
+## Customizing the Generated Code
 
 Just a quick closing remark - you can customize the code this Spring generator creates! It uses mustache
 template files which you can override.
