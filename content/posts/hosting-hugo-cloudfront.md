@@ -10,9 +10,7 @@ After spending the majority of today trying to figure this out, I'd like to disc
 very Hugo blog is hosted on AWS with CloudFront and S3, because it was a monstrosity to get
 to thanks to S3.
 
-**TL;DR**: Add the **uglyurls = true** configuration key in your **config.toml**. That
-changes the URLs rendered to the ugly form: **baseUrl/posts/homelab.html**. These are well
-liked by S3 website hosting buckets.
+> **TL;DR**: Add the **uglyurls = true** configuration key in your **config.toml**. That changes the URLs rendered to the ugly form: **baseUrl/posts/homelab.html**. These are well liked by S3 website hosting buckets.
 
 ## S3 and CloudFront - with SSL!
 
@@ -182,4 +180,6 @@ changes the URLs rendered to the ugly form: **baseUrl/posts/homelab.html**.
 _That's it_. With ugly URLs S3 (and, therefore, CloudFront) is happy and the blog renders.
 
 ...Gotta love infrastructure quirks...
+
+Hope this helped! Thanks for coming by the Lab!
 
