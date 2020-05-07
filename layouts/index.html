@@ -6,10 +6,6 @@
     <div class="container home">
       {{ partial "navbar.html" . }}
 
-      <!-- <h1 class="title">MedgeLabs</h1> -->
-
-      <hr />
-
       {{ range.Site.Pages.ByDate.Reverse }}
       {{ if ne .Title "Posts" }}
       {{ if ne .Title .Site.Title }}
@@ -19,7 +15,7 @@
         </h3>
         {{ partial "post-meta.html" . }}
         <p>{{ .Summary }}</p>
-        {{ partial "tags.html" . }}
+        <a class="tag" href="{{ .Permalink }}">Read more...</a>
       </article>
       {{ end }}
       {{ end }}

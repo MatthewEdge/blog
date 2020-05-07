@@ -3,14 +3,18 @@
 <div class="container single">
     {{ partial "navbar.html" . }}
 
+  <aside>
+    {{.TableOfContents}}
+  </aside>
 	<article>
-        <h1>{{ .Title }}</h1>
+    <!-- id for ScrollToTop  -->
+    <h2 id="top">{{ .Title }}</h1>
 		<div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div>
 		{{ .Content }}
 	</article>
-	<section class="comments">
-		{{ template "_internal/disqus.html" . }}
-	</section>
+
+  <!-- Scroll to top -->
+  <a href="#top"><div class="scrollTop"><i class="fa fa-chevron-up"></i></div></a>
 </div>
 
 {{ partial "footer.html" . }}
