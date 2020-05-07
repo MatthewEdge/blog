@@ -20,18 +20,23 @@ body {
 
 .brand {
   font-size: 2rem;
-  color: #8AA2D3;
+  color: #8aa2d3;
 }
 
 
 a {
-  color: #8AA2D3;
+  color: #8aa2d3;
   text-decoration: none;
   word-break: break-word;
 }
 
 a:hover {
-  border-bottom: 2px solid #8AA2D3;
+  border-bottom: 2px solid #8aa2d3;
+}
+
+header {
+  border-bottom: 1px solid #999;
+  margin-bottom: 2rem;
 }
 
 header ul {
@@ -58,12 +63,18 @@ hr {
   border-top: 1px solid #999;
 }
 
+/* Post list on front page */
 article {
   margin-bottom: 2rem;
 }
 
 article > h3 {
   font-size: 1.3rem;
+}
+
+/* TableOfContents */
+aside.toc {
+
 }
 
 /* Post metadata */
@@ -80,10 +91,41 @@ h3.post-title {
   color: #8F82BC;
 }
 
+/* Post Content */
+
+blockquote {
+  padding: 0 1rem;
+  color: #6a737d;
+  /* border-left: 0.25rem solid #dfe2e5; */
+  border-left: 0.25rem solid #8aa2d3;
+}
+
 /* Code fragments */
 .highlight {
   border: 1px solid #ccc;
   padding: 15px;
+}
+
+/* Scroll to top button for desktop */
+.scrollTop {
+    cursor: pointer;
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 1rem;
+    bottom: 1rem;
+    color: #8aa2d3;
+    background-color: #dddddd;
+    border-radius: 100%;
+    /* line-height: 2.5rem; */
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.scrollTop > i {
+  font-size: 1.5rem;
+  line-height: inherit;
 }
 
 footer {
