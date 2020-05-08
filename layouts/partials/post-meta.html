@@ -1,5 +1,5 @@
 <span class="post-meta">
-  <span class="post-time">{{ .Date.Format "2006-01-02" }}</span>
+  <time datetime="{{.Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
   <!-- <span class="subtext">{{ .WordCount }} words</span> -->
   {{ if .Params.tags }}
   |
