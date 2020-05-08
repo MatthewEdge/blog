@@ -1,7 +1,7 @@
 +++
 date = "2020-05-04"
 title = "Generating Code from OpenAPI Schemas"
-author = "{{ .Site.Author.name }}"
+author = "Matthew Edge"
 description = "Generating Code from OpenAPI Schemas"
 tags = ["java", "spring-boot", "openapi"]
 +++

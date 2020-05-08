@@ -1,7 +1,7 @@
 +++
 date = "2020-05-05"
 title = "Hosting Hugo on AWS"
-author = "{{ .Site.Author.name }}"
+author = "Matthew Edge"
 description = "Hugo, CloudFront, and AWS S3"
 tags = ["aws", "cloudfront", "s3", "hugo"]
 +++

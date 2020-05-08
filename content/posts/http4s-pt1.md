@@ -1,7 +1,7 @@
 +++
 date = "2020-05-27"
 title = "Functional Programming and a Goban"
-author = "{{ .Site.Author.name }}"
+author = "Matthew Edge"
 description = "http4s, fs2, and building a Go board game"
 tags = ["scala", "http4s", "functional-programming"]
 draft = true

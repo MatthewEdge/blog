@@ -1,7 +1,7 @@
 +++
 date = "2020-05-07"
 title = "Modern Java Tips/Tricks"
-author = "{{ .Site.Author.name }}"
+author = "Matthew Edge"
 description = "Modern Java Tips/Tricks"
 draft = true
 +++
