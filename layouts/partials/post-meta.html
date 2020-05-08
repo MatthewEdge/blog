@@ -5,9 +5,7 @@
   |
   {{ range .Params.tags }}
   <!-- <a class="tag" href="/tags/{{ . | urlize }}/">{{ . }}</a> -->
-  <a class="tag" href="#">{{ . }}</a>
+  <span class="tag">{{ . }}</span>
   {{ end }}
-  {{ else }}
-  <span>No Tag</span>
   {{ end }}
 </span>
