@@ -1,5 +1,5 @@
 +++
-date = "2020-04-27"
+date = "2020-05-27"
 title = "Functional Programming and a Goban"
 author = "{{ .Site.Author.name }}"
 description = "http4s, fs2, and building a Go board game"
