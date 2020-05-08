@@ -41,8 +41,7 @@ Resources:
       Bucket: !Ref WebsiteBucket
       PolicyDocument:
         Statement:
-          -
-            Effect: Allow
+          - Effect: Allow
             Action:
               - s3:GetObject
             Resource: !Sub "arn:aws:s3:::${WebsiteBucket}/*"
