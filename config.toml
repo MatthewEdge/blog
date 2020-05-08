@@ -21,7 +21,7 @@ stackoverflow = "1735905/mattedge"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "vs"
+    style = "tango"
     tabWidth = 4
 
   [goldmark.renderer]

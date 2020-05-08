@@ -10,7 +10,7 @@
       {{ if ne .Title "Posts" }}
       {{ if ne .Title .Site.Title }}
       <article>
-        <h3 class="post-title">
+        <h3>
           <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
         </h3>
         {{ partial "post-meta.html" . }}
