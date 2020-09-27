@@ -9,12 +9,12 @@
   --scrollbtn: #dddddd;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #2d2d2d;
-    --text: #fafafa;
-  }
-}
+/* @media (prefers-color-scheme: dark) { */
+  /* :root { */
+    /* --background: #2d2d2d; */
+    /* --text: #fafafa; */
+  /* } */
+/* } */
 
 
 body {
