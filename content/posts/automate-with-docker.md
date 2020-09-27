@@ -48,3 +48,10 @@ brain space to simply _use_ what the team had created.
 
 My first instinct is, usually, to wrap such tasks in Bash.
 
+## Automate Data Stores
+
+Databases, volumes for persistent data
+
+## Automate Labs
+
+Dev environments, build servers, webhooks
