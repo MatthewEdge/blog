@@ -1,18 +1,38 @@
 +++
 date = "2020-07-09"
-title = "The Art of Work Pt. 1 - Daily March"
+title = "The Art of Work - The Daily March"
 author = "Matthew Edge"
 description = "Musings on the March"
 draft = true
 +++
 
-Throughout my career I've always made a conscious effort to reflect on my current self. I reflect
-on decisions I made in projects, mistakes I may have made (and if I could have done better),
-directions I want to travel, etcetera. I also make a point to listen to others perspectives and
-try to understand where those thoughts and perspectives come from. What motivates me? What motivates
-them? What do we take for granted, and why?
+I've been musing on the Daily March with a coworker recently. Given the world around us, currently,
+we've found ourselves discussing our value to our company, how we can ensure that sticks, and how
+we can potentially improve that value while gaining personal value at the same time. Seems reasonable,
+no?
 
-Few topics come up more often than working on "fun and interesting technologies".
+We ended up going down a _very_ deep rabbit hole. The discussion was harrowing but humbling. It invigorated
+us more than we anticipated. I'm going to try to break it down here!
+
+## Who Do We Build For?
+
+* Who are we writing code for?
+* Why are we writing the code we are writing?
+* What value does the code have?
+
+We started with these questions, and oh how our answers differed!
+
+We both agreed on `Who are we writing code for?`: we write code for other developers, not the machine (until we
+identify a hot spot. Then we pull out the voodoo!). This is why we focus on organization, naming, patterns, and
+clean code! You are focusing on those, right?? However - increasingly we are starting to see this idea being
+bypassed, either intentionally or unintentionally, in favor of speed and cleverness.
+
+With speed - deadlines seem to be the primary culprit cited. Agile environments especially. "Deadline is coming
+up, just get it in" or "We can fix it later. Agile!". I find this sentiment a bit...disappointing? In trying to
+break down why, I stumbled through a couple debated points:
+
+* Why are the deadlines so far off?
+* Are we going too slow?
 
 ## Shiny Syndrome
 
