@@ -3,15 +3,15 @@ date = "2020-09-29"
 title = "Lab Log: Building a Twitch Bot in Go - Day 1"
 author = "Matthew Edge"
 description = ""
-draft = true
+tags = ["golang", "irc", "twitch", "chatbot"]
 +++
 
-Almost one month ago I started streaming on Twitch! (How time flies when you're having
-fun). There were a number of reasons for deciding to stream me coding live, in all its
-flaws, but ultimately showing those flaws became the primary reason for streaming in the
-first place! I wanted to show that software development, in the real world, is not about
-knowing answers. It's about finding those answers and coming up with applicable solutions,
-however you may find that information! There are, rarely, right answers! :)
+One month ago I started streaming on Twitch! There were a number of reasons for deciding
+to start coding live, but ultimately I wanted to show that software development,
+in the real world, is not about knowing answers up front. It's about finding those answers
+and coming up with applicable solutions, however you may find that information! There are,
+rarely, right answers! :) It's meant to be a peek into what my day to day as a Software
+Developer looks like and, ideally, we learn things along the way!
 
 Recently, it was recommended by one of my lovely viewers, `dal3xx`, that I write
 an accompanying blog post for the streams to go over, in more detail, what went on and
@@ -21,8 +21,8 @@ why I chose to do things the way I did. And so, I present the Lab Log! Thanks Da
 
 First things first: what are we actually doing? For our first project on Twitch, I
 decided to take a stab at writing a Chat Bot for Twitch. Being a moderator for two
-other amazing streamers ([@SorceryAndSarcasm](https://twitch.tv/sorceryandsarcasm)
-and [@SpookyGhostMachine](https://twitch.tv/spookyghostmachine)) finds me using chat
+other amazing streamers (our wonderful mod: [@SorceryAndSarcasm](https://twitch.tv/sorceryandsarcasm)
+, and the amazing [@SpookyGhostMachine](https://twitch.tv/spookyghostmachine)) finds me using chat
 bots like Nightbot and Streamlabs quite a lot. Digging around the [Twitch Developer Documentation](https://dev.twitch.tv/docs/irc/guide)
 led me to discover that Twitch Chat is actually an IRC client!
 
@@ -59,6 +59,9 @@ how to connect via a Websocket connection! Given I have plenty of history with W
 my eyes trained in on this option. I also saw my first glimpse at how the use of IRC
 commands (PASS and NICK) looked. This gave me some context to consider when looking for
 Websocket client libraries!
+
+It was during this time that we got our first raid, as well! Big shout out to [@ShredderPlays](https://www.twitch.tv/ShrederPlays)
+and the raiders for stopping in!
 
 After looking through the client [included with the Go standard library](https://godoc.org/golang.org/x/net/websocket),
 the [nhooyr client](https://godoc.org/nhooyr.io/websocket), and the [Gorilla Websocket client](https://godoc.org/github.com/gorilla/websocket),
