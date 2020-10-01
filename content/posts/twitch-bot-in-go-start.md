@@ -97,13 +97,16 @@ and a quick prayer to the Code Gods - success!
 
 Seeing this message means we're in!
 
+Lastly, we issued the `JOIN` command to see if the bot could connect to our own chat.
+This required adding a `for{}` loop to constantly read from the Websocket connection
+so that new messages would show on the console, but it was relatively easy to do with
+Gorilla! After a couple of tries, we started seeing chat messages scroll by! Oh the feels.
+
 ## Conclusion
 
 Is it a Bot yet? Not technically, but it's still so elating to see even the small successes
 when working on projects like this! And it was so much fun having chat along for the ride!
 We had some great conversations, I learned a thing or two based on suggestions from viewers,
 and, hopefully, chat enjoyed the time as well!
-
-Next time: getting chat to start showing up on the console!
 
 Thanks for stopping by The Lab!
