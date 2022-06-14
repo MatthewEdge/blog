@@ -3,7 +3,6 @@ date = "2020-05-07"
 title = "Modern Java Tips/Tricks"
 author = "Matthew Edge"
 description = "Modern Java Tips/Tricks"
-draft = true
 +++
 
 Java development comes under a lot of heat these days for being verbose, bloated, and terrible for
@@ -186,7 +185,7 @@ This one is a real kicker because it can sometimes kick you back...hard. I'm not
 advocating to be on the bleeding edge. I've done that enough. I am, indeed, still bloody (
 but happy!). What I'm mostly picking at is enabling the ability to upgrade. I see _a lot_ of
 people using Postgres but sticking to pre-version 9. I still see Spring Boot 1.4 and lower in
-Production (we're in 2.0 now).
+Production (we're in 2.0 here in 2020).
 
 Even if you can't do a major version change yet for some reason, stay
 on top of those minor versions. I've observed most big libraries keeping to the SemVer rules of
@@ -231,6 +230,6 @@ tooling.
 
 Java is often criticized for being a boring, verbose, esoteric language that's falling behind more
 modern equivalents. But with a few changes to your process, your tool chain, or your paradigm,
-it can actually be a _decent experience_.
+it can actually be a _decent experience_. Still not quite as good as Golang, though...
 
 Hope this helps! Thanks for stopping by the Lab!
