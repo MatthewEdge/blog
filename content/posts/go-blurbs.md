@@ -6,6 +6,36 @@ description = "Various things learned from my time with Go"
 draft = true
 +++
 
+## Checking for Type Adherence
+
+You can check if a struct implements an interface using a discarded variable and the `new()` built-in:
+
+```go
+type Thing interface {
+  Fn() int
+  Bn() int
+}
+
+// PartialThing only implements Fn() and, thus, is not a valid Thing
+type PartialThing struct {}
+
+func (p *PartialThing) Fn() int {
+  return 1
+}
+
+// Using this trick: we can get the compiler to tell us if PartialThing implements Thing. In this case it does not
+var _ Thing = new(PartialThing)
+```
+
+The last line will result in a compilation error like the following:
+
+```
+
+```
+
+Many OSS libraries used this technique (though a slightly different form: `var _ Thing = (*PartialThing)(nil)`) to check
+type enforcement at compile-time more quickly than requiring a method arg to check.
+
 ## encoding/json Oddities
 
 `integers are unmarshalled to float64 when the dest argument is an interface{}`
